@@ -20,7 +20,7 @@ export class ApplicantService {
       return this.http.post('https://edulight-server.herokuapp.com/loginUser', body, {
         observe: 'body'
       })
-  }
+  } 
 
   getGrades(id){
     return this.http.get('https://edulight-server.herokuapp.com/getGrade/'+id);    
