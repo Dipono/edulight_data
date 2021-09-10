@@ -34,7 +34,7 @@ export class ApplicantService {
   }
   
 
-  // *******************************  LOCALHOST *******************************  LOCALHOST  *******************************//
+  // *****************************  LOCALHOST *****************************  LOCALHOST  *******************************//
 /*
   userLogin(body: any){
       return this.http.post('http://localhost:4041/loginUser', body, {
