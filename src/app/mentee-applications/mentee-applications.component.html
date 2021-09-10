@@ -1,0 +1,85 @@
+<body>
+	<div class="form-button">
+        <button class="back-btn" (click)="back()">Back</button>       
+        <button class="form-btn" (click)="logout()">Logout</button>
+		<!--<button class="form-btn" (click)="display()">next</button>-->
+    </div>
+
+  	<div class="w3-responsive" style="overflow-x:auto;">
+  		<table class="w3-table w3-bordered w3-striped">
+  			<thead>
+	  			<th><label>Identification Number</label></th>              
+  				<th><label>Full names</label></th>
+  				<th><label>Date of Birth</label></th>
+	  			<th><label>Contact(s)</label></th>
+	  			<th><label>Email</label></th>
+	  			<th><label>Disability and reason</label></th>
+	  			<th><label>Residential Address</label></th>
+	  			<th><label>Gender</label></th>
+	  			<th><label>Medical Condition</label></th> 
+	  			<th><label>Next of Kin Name and Surname</label></th>
+	  			<th><label>Next of Kin Relationship</label></th>
+	  			<th><label>Next of Kin Residential Address</label></th>
+	  			<th><label>Contact Number</label></th>  			  
+	  			<th><label>View Education</label></th>
+
+				<!--<th>School name</th>
+	  			<th>School Year</th>  				  
+	  			<th>Grade</th>  
+	  			<th>Subjects</th>
+	  			<th>Institution</th>
+	  			<th>Tertiary qualification/Study field</th>
+	  			<th>awards or special achievement</th>-->
+                                  
+  			</thead>
+
+  			<tbody>
+  				<tr *ngFor="let app of applicationInfo">
+  					<td><label>{{app.myId}}</label></td>				  
+  					<td><label>{{app.names }} {{app.surname}}</label></td>
+  					<td><label>{{app.mydob}}</label></td>
+  					<td><label>{{app.myPhoneNo}} {{app.alt_Phone_Number}}</label></td>
+  					<td><label>{{app.email}}</label></td>
+  					<td><label>{{app.disability}} {{app.disabilityDesc}}</label></td>
+  					<td><label>{{app.province}}, {{app.streetNo}}, {{app.city}}, {{app.town}}, {{app.myCode}} </label></td>
+  					<td><label>{{app.gender}}</label></td>
+  					<td><label>{{app.medicalCondition}}</label></td>
+  					<td><label>{{app.kinFullName}}</label></td>
+  					<td><label>{{app.kinRelationType}}</label></td>					  
+  					<td><label>{{app.kinProvince}}, {{app.kinHouseNo}}, {{app.kinCity}}, {{app.kinTown}}, {{app.kinCode}}</label></td>
+  					<td><label>{{app.kinPhoneNo}}</label></td>	  
+					<td><button (click)="menteeEducation(app.stud_id)">View</button><td>
+  					<!--<td>{{app}}</td>					  
+  					<td>{{app.institution}} {{app.secInstitution}}</td>
+  					<td>{{app.qualification}} {{app.secQualification}}</td>
+  					<td>{{app.studyLevel}}</td>
+  					<td>{{app.award}}</td>
+  					<td>{{app.organization}}</td>
+  					<td>{{app.workkExperience}}</td>
+  					<td>{{app.profBody}}</td>
+  					<td>{{app.criminalRec}}</td>
+  					<td>{{app.mentor}}</td>
+  					<td>{{app.workPupil}}</td>
+  					<td>{{app.mentorSkills}}</td>
+                    <td>{{app.menteeNo}}</td>
+  					<td>{{app.mentoringReason}} it</td>
+                    <td>{{app.facebook}}</td>
+                    <td>{{app.instagram}}</td>
+                    <td>{{app.twitter}}</td>
+                    <td>{{app.linkedin}}</td>-->
+					
+  				</tr>
+  			</tbody>
+  		</table>
+  		
+  	</div>
+  
+
+    <div class="footer">
+
+    <div class="ending">
+        <p>&copy; Edulight 2021</p>
+    </div>
+
+    </div>
+</body>

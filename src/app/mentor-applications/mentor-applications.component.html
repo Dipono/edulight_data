@@ -1,0 +1,81 @@
+<body>
+	<div class="form-button">
+        <button class="back-btn" (click)="back()">Back</button>       
+        <button class="form-btn" (click)="logout()">Logout</button>
+    </div>
+
+  	<div class="w3-responsive">
+  		<table class="w3-table w3-bordered w3-striped">
+  			<thead>
+  				<th><label>Full names</label></th>
+  				<th><label>Date of Birth</label></th>
+	  			<th><label>Contact(s)</label></th>
+	  			<th><label>Email</label></th>
+	  			<th><label>Disability and reason</label></th>
+	  			<th><label>Residential Address</label></th>
+	  			<th><label>Gender </label></th>
+	  			<th><label>Institution</label></th>
+	  			<th><label>Tertiary qualification/Study field</label></th>
+	  			<th><label>Level of study</label></th>
+	  			<th><label>Awards or special achievement</label></th>
+	  			<th><label>student organization</label></th>
+	  			<th><label>work experience</label></th>
+	  			<th><label>professional body</label></th>
+	  			<th><label>criminal charges</label></th>
+	  			<th><label>have you mentor anyone before</label></th>
+	  			<th><label>have you worked with pupils before</label></th>
+	  			<th><label>mentorship skills</label></th>
+	  			<th><label>Take number of Mentee</label></th>                  
+	  			<th><label>Reason for mentoring pupils</label></th>
+	  			<th><label>Facebook</label></th>
+	  			<th><label>Instagram</label></th>
+	  			<th><label>Twitter</label></th>
+	  			<th><label>LinkedIn</label></th>
+                                  
+  			</thead>
+
+  			<tbody>
+  				<tr *ngFor="let app of mentorApplicant">
+  					<td><label>{{app.fullName}} {{app.surname}}</label></td>
+  					<td><label>{{app.mydob}}</label></td>
+  					<td><label>0{{app.cellNo}} 0{{app.altCellNo}}</label></td>
+  					<td><label>{{app.email}}</label></td>
+  					<td><label>{{app.disability}} {{app.disabilityInfo}}</label></td>
+  					<td><label>{{app.reAddress}}</label></td>
+  					<td><label>{{app.gender}}</label></td>
+  					<td><label>{{app.institution}} {{app.secInstitution}}</label></td>
+  					<td><label>{{app.qualification}} {{app.secQualification}}</label></td>
+  					<td><label>{{app.studyLevel}}</label></td>
+  					<td><label>{{app.award}}</label></td>
+  					<td><label>{{app.organization}}</label></td>
+  					<td><label>{{app.workkExperience}}</label></td>
+  					<td><label>{{app.profBody}}</label></td>
+  					<td><label>{{app.criminalRec}}</label></td>
+  					<td><label>{{app.mentor}}</label></td>
+  					<td><label>{{app.workPupil}}</label></td>
+  					<td><label>{{app.mentorSkills}}</label></td>
+                    <td><label>{{app.menteeNo}}</label></td>
+  					<td><label>{{app.mentoringReason}}</label></td>
+                    <td><label>{{app.facebook}}</label></td>
+                    <td><label>{{app.instagram}}</label></td>
+                    <td><label>{{app.twitter}}</label></td>
+                    <td><label>{{app.linkedin}}</label></td>
+                      
+
+  				</tr>
+  			</tbody>
+  		</table>
+  		
+  	</div>
+  
+
+    <div class="footer">
+
+    
+
+    <div class="ending">
+        <p>&copy; Edulight 2021</p>
+    </div>
+
+    </div>
+</body>

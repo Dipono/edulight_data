@@ -1,0 +1,30 @@
+.form-button{
+    /*position: fixed;*/
+}
+.form-btn{
+    width: 80px;
+    height: 30px;
+    color: white;
+    background-color: green;
+    font-weight: 500;
+    margin-top: 15px;
+    margin-left: 15px;
+    border-radius: 5px;
+}
+
+.back-btn{
+    width: 80px;
+    height: 30px;
+    color: green;
+    font-weight: 500;
+    margin-top: 15px;
+    border-radius: 5px;
+}
+
+.learner-info{
+    text-align:right;
+}
+
+.learner-info label{
+    text-align:left;
+}

@@ -1,0 +1,78 @@
+body{
+    margin: 15px;
+}
+.myBody{
+    display: flex;
+    
+}
+
+img{
+    padding: 7px;
+    border-radius: 50%;
+}
+
+.name{
+    margin-top: 10px;
+}
+
+.company{
+    height: 35px;
+    width: 100%;
+}
+h3{
+    margin-top:10px
+}
+.company h3{
+    margin-left: 5px;
+    margin-top: 5px;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+.slogan p{
+    margin-bottom: 15px;
+    font-size: 0.8em;
+}
+
+
+/*
+.name{
+    margin-left: 10px;
+}
+
+.form-group{
+    margin-left: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    width: 100%;
+}
+
+.form-group .logo{
+    border: 2px solid black;
+    padding: 7px;
+    border-radius: 50%;
+}
+
+.logo .image{
+    margin-top: 5px;
+    margin-left: 4px;
+}
+
+.company{
+    background-color: black;
+    width: 300%
+}
+
+.form-group .name h3{
+    margin-left: 5px;
+    color: white;
+}
+
+
+
+
+.name .slogan{
+    color: black;
+    margin-bottom: 5px;
+
+}*/

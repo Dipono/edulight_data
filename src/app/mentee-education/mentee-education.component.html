@@ -1,0 +1,43 @@
+<body>
+    <div class="form-button">
+        <button class="back-btn" (click)="backToAllApplicant()">Back</button>       
+        <button class="form-btn" (click)="logout()">Logout</button>
+    </div>
+
+    <div class="main">
+        <div class="learner-info">
+            <label>Name: {{names}}<br>
+            Id No: {{idNo}}<br>
+            email:{{email}}<br>
+            phone No: {{phoneNo}}</label>
+            
+        </div>
+        <div class="form-group">
+            <h2>Shool</h2>
+            <div class="schools" *ngFor="let scl of school">
+                <h3>{{scl.school_Name}} : {{scl.myYear}}</h3>
+                <div class="subjects" *ngFor="let sub of subjects">
+                    <label>{{sub.subjName}}({{scl.grade}})</label> 
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="intitutions">
+            <h2>Tertiary</h2>
+            <div  *ngFor="let tert of tertiary">
+                <label>{{tert.tert_Name}}</label>
+            </div>
+        </div>
+
+        <div class="Courses">
+            <h2>Course</h2>
+            <div *ngFor="let tert of tertiary">
+                <label>{{tert.course_Name}}</label>
+            </div>
+        </div>
+    </div>
+
+
+</body>
